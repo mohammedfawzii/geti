@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Geti</title>
+</head> 
+<body class="bg-gray-100">
+<div id="preloader" class="fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center justify-center z-50">
+    <div class="animate-spin text-blue-600 mb-4">
+        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 6V4m0 16v-2m-4.243-1.757l-1.414 1.414M16.243 16.243l1.414 1.414M6 12H4m16 0h-2m-1.757-4.243l1.414-1.414M7.757 7.757L6.343 6.343"></path>
+        </svg>
+    </div>
+    <p id="loadingText" class="text-2xl font-bold text-blue-600"></p>
+</div>
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="h-16 flex justify-between items-center px-10">
+            <div class="logo text-2xl font-bold text-gray-700">
+                <a href="#">geti</a>
+            </div>
+            <nav class="navbar flex items-center space-x-6">
+                <ul class="flex space-x-6 text-gray-700 font-semibold">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Client</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="relative">
+                    <button id="langBtn"
+                        class="flex items-center bg-gray-200 px-4 py-2 rounded-lg text-gray-700 font-semibold">
+                        <img src="https://flagcdn.com/w40/us.png" class="w-6 h-4 mr-2" id="flagIcon">
+                        <span id="selectedLang">EN</span>
+                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <ul id="langMenu"
+                        class="absolute right-0 mt-2 w-32 bg-white border rounded-lg shadow-lg hidden z-50">
+                        <li class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-100" data-lang="EN">
+                            <img src="https://flagcdn.com/w40/us.png" class="w-6 h-4 mr-2"> English
+                        </li>
+                        <li class="flex items-center px-4 py-2 cursor-pointer hover:bg-gray-100" data-lang="AR">
+                            <img src="https://flagcdn.com/w40/sa.png" class="w-6 h-4 mr-2"> العربية
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Slider Section -->
+    <div class="slider mt-6">
+        <div class="swiper mainSwiper w-full max-w-9xl h-[600px] mx-auto">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="asset/image/slider/action-backlit-beach-1046896-1200x450_c.jpg" alt="Image 1"
+                        class="w-full ">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/slider/car.jpg" alt="Image 2" class="w-full ">
+                </div>
+                <div class="swiper-slide">
+                    <img src="asset/image/slider/sweden.jpg" alt="Image 3" class="w-full ">
+                </div>
+            </div>
+            <div class="swiper-button-next swiper-button-next-main"></div>
+            <div class="swiper-button-prev swiper-button-prev-main"></div>
+            <div class="swiper-pagination swiper-pagination-main"></div>
+        </div>
+    </div>
+
+    <!-- start container -->
+    <div class="container max-w-7xl mx-auto">
+
+        <!-- about us -->
+        <section class="about-us flex flex-col items-center justify-center py-12 mt-10 mb-20">
+            <div class="text-[50px] font-bold text-black mb-20">About Us</div>
+            <div class="text-lg text-gray-600  max-w-5xl text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ligula ac neque malesuada molestie.
+                Nullam sodales, nunc eu consectetur ultricies, justo velit semper velit, in condimentum neque velit in
+                lectus. Sed tempor, mauris vitae posuere lobortis, velit velit commodo velit, ac laoreet neque enim in
+                justo.
+            </div>
+        </section>
+        <!-- services -->
+        <div class="services mt-10">
+            <div class="text-[50px] font-bold text-black mb-20 text-center">Our Service</div>
+            <div class="h-auto mt-20">
+                <div class="flex justify-around items-center">
+                    <div class="w-1/2">
+                        <div class="service-title text-xl bold text-gray-900 mt-4 mb-7"><a href="">Service 1</a></div>
+                        <div class="service-description text-gray-600">
+                            <a href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+                                amet, consectetur
+                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                dolor sit amet,
+                                consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                dolor sit amet,
+                                consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                dolor sit amet,
+                                consectetur adipiscing elit.</a>
+                        </div>
+                    </div>
+                    <div class="service-card w-1/2 px-4 p-5">
+                        <img src="asset/image/services/images (1).jpeg" alt="Service 1"
+                            class="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:rotate-1 hover:scale-105">
+                    </div>
+                </div>
+            </div>
+            <div class="h-auto mt-20">
+                <div class="flex justify-around items-center">
+                    <div class="service-card w-1/2 px-4 p-5">
+                        <img src="asset/image/services/images (1).jpeg" alt="Service 1"
+                            class="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:rotate-1 hover:scale-105">
+                    </div>
+                    <div class="w-1/2">
+                        <div class="service-title text-xl bold text-gray-900 mt-4 mb-7"><a href="">Service 2</a>
+                        </div>
+                        <div class="service-description text-gray-600">
+                            <a href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
+                                sit amet, consectetur
+                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                                ipsum dolor sit amet,
+                                consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                                ipsum dolor sit amet,
+                                consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                                ipsum dolor sit amet,
+                                consectetur adipiscing elit.</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="h-auto mt-20">
+                <div class="flex justify-around items-center">
+                    <div class="w-1/2">
+                        <div class="service-title text-xl bold text-gray-900 mt-4 mb-7"><a href="">Service 3</a>
+                        </div>
+                        <div class="service-description text-gray-600">
+                            <a href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
+                                sit amet, consectetur
+                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                                ipsum dolor sit amet,
+                                consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                                ipsum dolor sit amet,
+                                consectetur adipiscing elit.
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
+                                consectetur
+                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
+                                ipsum dolor sit amet,
+                                consectetur adipiscing elit.</a>
+                        </div>
+                    </div>
+                    <div class="service-card w-1/2 px-4 p-5">
+                        <img src="asset/image/services/images (1).jpeg" alt="Service 1"
+                            class="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:rotate-1 hover:scale-105">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- product -->
+        <div class="services mt-20 mb-20">
+            <div class="text-[50px] font-bold text-black mb-20 text-center">Our Service</div>
+            <div class="h-auto mt-20">
+                <div class="max-w-6xl mx-auto">
+                    <div class="swiper mySwiper ">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative">
+                                <p
+                                    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
+                                    New</p>
+                                <img src="asset/image/products/images.jpeg" class="mx-auto mb-3 !h-[90%] rounded-lg"
+                                    alt="Product">
+                                <div class="h-1/8 flex justify-center">
+                                    <h3 class="text-xl font-bold">Product 1</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative">
+                                <p
+                                    class="text-sm absolute top-2 right-1 bg-red-600 text-white px-3 py-1 rounded-md shadow-md">
+                                    over</p>
+                                <img src="asset/image/products/images.jpeg" class="mx-auto mb-3 !h-[90%] rounded-lg"
+                                    alt="Product">
+                                <div class="h-1/8 flex justify-center">
+                                    <h3 class="text-xl font-bold">Product 2</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative">
+                                <p
+                                    class="text-sm absolute top-2 right-1 bg-blue-600 text-white px-3 py-1 rounded-md shadow-md">
+                                    soon</p>
+                                <img src="asset/image/products/images.jpeg" class="mx-auto mb-3 !h-[90%] rounded-lg"
+                                    alt="Product">
+                                <div class="h-1/8 flex justify-center">
+                                    <h3 class="text-xl font-bold">Product 3</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative">
+                                <p
+                                    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
+                                    New</p>
+                                <img src="asset/image/products/images.jpeg" class="mx-auto mb-3 !h-[90%] rounded-lg"
+                                    alt="Product">
+                                <div class="h-1/8 flex justify-center">
+                                    <h3 class="text-xl font-bold">Product 5</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative">
+                                <p
+                                    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
+                                    New</p>
+                                <img src="asset/image/products/images.jpeg" class="mx-auto mb-3 !h-[90%] rounded-lg"
+                                    alt="Product">
+                                <div class="h-1/8 flex justify-center">
+                                    <h3 class="text-xl font-bold">Product 6</h3>
+                                </div>
+                            </div>
+                            <div class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative">
+                                <p
+                                    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
+                                    New</p>
+                                <img src="asset/image/products/images.jpeg" class="mx-auto mb-3 !h-[90%] rounded-lg"
+                                    alt="Product">
+                                <div class="h-1/8 flex justify-center">
+                                    <h3 class="text-xl font-bold">Product 7</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="mt-10 swiper-button-prev"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- clinets -->
+    <div class="clients bg-white-100 p-10 mt-20">
+        <div class="max-w-4xl mx-auto mt-10">
+            <h2 class="text-[50px] font-bold text-black text-center">Our Clients</h2>
+            <div class="text-lg text-gray-600  max-w-5xl mb-20 text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ligula ac neque malesuada molestie.
+                Nullam sodales, nunc eu consectetur ultricies, justo velit semper velit, in condimentum neque velit in
+                lectus. Sed tempor, mauris vitae posuere lobortis, velit velit commodo velit, ac laoreet neque enim in
+                justo.
+            </div>
+            <div class="swiper mySwiperClients">
+                <div class="swiper-wrapper flex items-center">
+                    <div class="swiper-slide"><img src="asset/image/clients/client1.png" class="!h-auto"></div>
+                    <div class="swiper-slide"><img src="asset/image/clients/client2.png" class="!h-auto"></div>
+                    <div class="swiper-slide"><img src="asset/image/clients/client3.png" class="!h-auto"></div>
+                    <div class="swiper-slide"><img src="asset/image/clients/client1.png" class="!h-auto"></div>
+                    <div class="swiper-slide"><img src="asset/image/clients/client2.png" class="!h-auto"></div>
+                    <div class="swiper-slide"><img src="asset/image/clients/client3.png" class="!h-auto"></div>
+
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+<!-- footer -->
+    <footer class="relative h-auto   bg-blue-900 text-white py-10">
+        <div class="container mx-auto px-6 lg:px-20">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+
+                <div>
+                    <h2 class="text-2xl font-bold flex items-center gap-2">
+                        <img src="logo.png" alt="Geti Logo" class="w-8 h-8"> Geti
+                    </h2>
+                    <p class="mt-2 text-sm text-gray-300">Custom Best for Web & Industry</p>
+                    <p class="text-gray-400 text-xs">Building & Elevating Business Digitally</p>
+                    <div class="flex gap-3 mt-4">
+                        <a href="#" class="text-white text-lg"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-white text-lg"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white text-lg"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">Pages</h3>
+                    <ul class="mt-2 space-y-1 text-gray-300 text-sm">
+                        <li><a href="#" class="hover:text-gray-100">Home</a></li>
+                        <li><a href="#" class="hover:text-gray-100">Service</a></li>
+                        <li><a href="#" class="hover:text-gray-100">Product</a></li>
+                        <li><a href="#" class="hover:text-gray-100">Client</a></li>
+                        <li><a href="#" class="hover:text-gray-100">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">Our Services</h3>
+                    <ul class="mt-2 space-y-1 text-gray-300 text-sm">
+                        <li><a href="#" class="hover:text-gray-100">Demo Upload</a></li>
+                        <li><a href="#" class="hover:text-gray-100">Demo Database</a></li>
+                    </ul>
+
+                    <h3 class="font-semibold text-lg mt-4">Production Process</h3>
+                    <ul class="mt-2 space-y-1 text-gray-300 text-sm">
+                        <li><a href="#" class="hover:text-gray-100">Raw Material</a></li>
+                        <li><a href="#" class="hover:text-gray-100">Cutting & Molding</a></li>
+                        <li><a href="#" class="hover:text-gray-100">Bright Anodization</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-lg">Contact Info</h3>
+                    <ul class="mt-2 space-y-1 text-gray-300 text-sm">
+                        <li><i class="fas fa-map-marker-alt"></i> Head Office: Egypt</li>
+                        <li><i class="fas fa-phone"></i> +20 2 1234 5678</li>
+                        <li><i class="fas fa-envelope"></i> info@geti.com</li>
+                    </ul>
+
+                    <h3 class="font-semibold text-lg mt-4">Factory</h3>
+                    <ul class="mt-2 space-y-1 text-gray-300 text-sm">
+                        <li>6 October Industrial City</li>
+                        <li>4 Industrial Zone</li>
+                        <li>Cairo, Egypt</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 text-center">
+                <p class="text-lg font-semibold">Subscribe to Our Newsletter</p>
+                <div class="mt-3 flex justify-center">
+                    <input type="email" placeholder="Enter your email"
+                        class="px-4 py-2 w-64 text-gray-700 rounded-l-lg">
+                    <button class="bg-red-500 px-4 py-2 text-white rounded-r-lg">Subscribe</button>
+                </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+        </div>
+        <div class="absolute bottom-0 w-full bg-gray-800 text-white text-center py-4">
+            © 2025 Geti. All rights reserved.
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script >
+         const text = `Welcome to GETI`;
+    let index = 0;
+    const speed = 250; 
+
+    function typeEffect() {
+        if (index < text.length) {
+            document.getElementById("loadingText").innerHTML += text.charAt(index);
+            index++;
+            setTimeout(typeEffect, speed);
+        } else {
+            setTimeout(() => {
+                let preloader = document.getElementById("preloader");
+                preloader.style.opacity = "0";
+                setTimeout(() => {
+                    preloader.style.display = "none";
+                }, 500);
+            }, 1000);
+        }
+    }
+
+    // تشغيل التأثير عند تحميل الصفحة
+    window.addEventListener("load", function () {
+        typeEffect();
+    }); 
+    </script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                640: { slidesPerView: 1 },
+                768: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 }
+            }
+        });
+        // سلايدر العملاء
+        var swiperClients = new Swiper(".mySwiperClients", {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            loop: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                640: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 4 }
+            }
+        });
+         // تبديل القائمة المنسدلة
+         document.getElementById("langBtn").addEventListener("click", function () {
+            document.getElementById("langMenu").classList.toggle("hidden");
+        });
+
+        // تغيير اللغة عند الاختيار
+        document.querySelectorAll("#langMenu li").forEach(item => {
+            item.addEventListener("click", function () {
+                let selectedLang = this.getAttribute("data-lang");
+                let selectedFlag = this.querySelector("img").src;
+
+                document.getElementById("selectedLang").textContent = selectedLang;
+                document.getElementById("flagIcon").src = selectedFlag;
+
+                document.getElementById("langMenu").classList.add("hidden"); // إغلاق القائمة
+            });
+        });
+
+        // إغلاق القائمة عند النقر خارجها
+        document.addEventListener("click", function (event) {
+            if (!document.getElementById("langBtn").contains(event.target) &&
+                !document.getElementById("langMenu").contains(event.target)) {
+                document.getElementById("langMenu").classList.add("hidden");
+            }
+        });
+        document.addEventListener("DOMContentLoaded", function () {
+            var mainSwiper = new Swiper(".mainSwiper", {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next-main",
+                    prevEl: ".swiper-button-prev-main",
+                },
+                pagination: {
+                    el: ".swiper-pagination-main",
+                    clickable: true,
+                },
+            });
+        });
+    </script>
+</body>
+
+</html>
