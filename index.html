@@ -8,33 +8,36 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="asset/css/styles.css">
     <title>Geti</title>
-</head> 
-<body class="bg-gray-100">
-<div id="preloader" class="fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center justify-center z-50">
-    <div class="animate-spin text-blue-600 mb-4">
-        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M12 6V4m0 16v-2m-4.243-1.757l-1.414 1.414M16.243 16.243l1.414 1.414M6 12H4m16 0h-2m-1.757-4.243l1.414-1.414M7.757 7.757L6.343 6.343"></path>
-        </svg>
+</head>
+
+<body class="bg-white-100">
+    <div id="preloader"
+        class="fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center justify-center z-50">
+        <div class="animate-spin text-blue-600 mb-4">
+            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 6V4m0 16v-2m-4.243-1.757l-1.414 1.414M16.243 16.243l1.414 1.414M6 12H4m16 0h-2m-1.757-4.243l1.414-1.414M7.757 7.757L6.343 6.343">
+                </path>
+            </svg>
+        </div>
+        <p id="loadingText" class="text-2xl font-bold text-blue-600"></p>
     </div>
-    <p id="loadingText" class="text-2xl font-bold text-blue-600"></p>
-</div>
     <!-- Header -->
     <header class="bg-white shadow-md">
         <div class="h-16 flex justify-between items-center px-10">
             <div class="logo text-2xl font-bold text-gray-700">
-                <a href="#">geti</a>
+                <a href="/"><img src="asset/image/logo/logo.png" alt=""></a>
             </div>
             <nav class="navbar flex items-center space-x-6">
                 <ul class="flex space-x-6 text-gray-700 font-semibold">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Client</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="blogs.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
                 <div class="relative">
                     <button id="langBtn"
@@ -60,32 +63,89 @@
         </div>
     </header>
     <!-- Slider Section -->
-    <div class="slider mt-6">
-        <div class="swiper mainSwiper w-full max-w-9xl h-[600px] mx-auto">
+    <div class="slider">
+        <div class="swiper mainSwiper w-full max-w-9xl h-[800px] mx-auto relative">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="asset/image/slider/action-backlit-beach-1046896-1200x450_c.jpg" alt="Image 1"
-                        class="w-full ">
+                <!-- Slide 1 -->
+                <div class="swiper-slide relative">
+                    <img src="asset/image/slider/1.jpg" alt="Image 1" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0  flex flex-col items-center justify-center bg-black/50 text-white text-center p-12">
+                        <h2 class="text-4xl  font-bold mb-4">Lorem Ipsum Dolor</h2>
+                        <p class="text-lg max-w-4xl  mx-auto mb-6">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo consequatur, iste cupiditate
+                            sit, enim tempore quod aliquam veniam quam sequi quo sunt nemo, ullam consequuntur
+                            architecto? Accusamus aut unde rem.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Quisque vitae
+                            purus ut justo laoreet aliquet.</p>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-lg">Learn
+                                More</a>
+                            <a href="#"
+                                class="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-lg text-lg">Get
+                                Started</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="asset/image/slider/car.jpg" alt="Image 2" class="w-full ">
+                <div class="swiper-slide relative">
+                    <img src="asset/image/slider/1.jpg" alt="Image 1" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0  flex flex-col items-center justify-center bg-black/50 text-white text-center p-12">
+                        <h2 class="text-4xl  font-bold mb-4">Lorem Ipsum Dolor</h2>
+                        <p class="text-lg max-w-4xl  mx-auto mb-6">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo consequatur, iste cupiditate
+                            sit, enim tempore quod aliquam veniam quam sequi quo sunt nemo, ullam consequuntur
+                            architecto? Accusamus aut unde rem.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Quisque vitae
+                            purus ut justo laoreet aliquet.</p>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-lg">Learn
+                                More</a>
+                            <a href="#"
+                                class="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-lg text-lg">Get
+                                Started</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="swiper-slide">
-                    <img src="asset/image/slider/sweden.jpg" alt="Image 3" class="w-full ">
+                <div class="swiper-slide relative">
+                    <img src="asset/image/slider/1.jpg" alt="Image 1" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0  flex flex-col items-center justify-center bg-black/50 text-white text-center p-12">
+                        <h2 class="text-4xl  font-bold mb-4">Lorem Ipsum Dolor</h2>
+                        <p class="text-lg max-w-4xl  mx-auto mb-6">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo consequatur, iste cupiditate
+                            sit, enim tempore quod aliquam veniam quam sequi quo sunt nemo, ullam consequuntur
+                            architecto? Accusamus aut unde rem.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Quisque vitae
+                            purus ut justo laoreet aliquet.</p>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-lg">Learn
+                                More</a>
+                            <a href="#"
+                                class="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-lg text-lg">Get
+                                Started</a>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- Navigation buttons -->
             <div class="swiper-button-next swiper-button-next-main"></div>
             <div class="swiper-button-prev swiper-button-prev-main"></div>
             <div class="swiper-pagination swiper-pagination-main"></div>
         </div>
     </div>
 
+
     <!-- start container -->
-    <div class="container max-w-7xl mx-auto">
+    <div class="container max-w-7xl mx-auto mt-[13rem]">
 
         <!-- about us -->
-        <section class="about-us flex flex-col items-center justify-center py-12 mt-10 mb-20">
-            <div class="text-[50px] font-bold text-black mb-20">About Us</div>
+        <section class="about-us flex flex-col items-center justify-center py-12 mt-10 mb-20 ">
+            <div class="text-[50px] font-bold text-black mb-10">About Us</div>
             <div class="text-lg text-gray-600  max-w-5xl text-center">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ligula ac neque malesuada molestie.
                 Nullam sodales, nunc eu consectetur ultricies, justo velit semper velit, in condimentum neque velit in
@@ -94,14 +154,14 @@
             </div>
         </section>
         <!-- services -->
-        <div class="services mt-10">
+        <div class="services mt-10 mt-[10rem]">
             <div class="text-[50px] font-bold text-black mb-20 text-center">Our Service</div>
             <div class="h-auto mt-20">
                 <div class="flex justify-around items-center">
                     <div class="w-1/2">
-                        <div class="service-title text-xl bold text-gray-900 mt-4 mb-7"><a href="">Service 1</a></div>
+                        <div class="service-title text-xl bold text-gray-900 mt-4 mb-7"><a href="service.html">Service 1</a></div>
                         <div class="service-description text-gray-600">
-                            <a href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+                            <a href="service.html"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
                                 amet, consectetur
                                 adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
                                 dolor sit amet,
@@ -119,22 +179,28 @@
                         </div>
                     </div>
                     <div class="service-card w-1/2 px-4 p-5">
-                        <img src="asset/image/services/images (1).jpeg" alt="Service 1"
+                        <a href="service.html">
+
+                            <img src="asset/image/services/1.png" alt="Service 1"
                             class="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:rotate-1 hover:scale-105">
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="h-auto mt-20">
                 <div class="flex justify-around items-center">
                     <div class="service-card w-1/2 px-4 p-5">
-                        <img src="asset/image/services/images (1).jpeg" alt="Service 1"
+                        <a href="service.html">
+                            
+                            <img src="asset/image/services/2.png" alt="Service 1"
                             class="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:rotate-1 hover:scale-105">
+                        </a>
                     </div>
                     <div class="w-1/2">
-                        <div class="service-title text-xl bold text-gray-900 mt-4 mb-7"><a href="">Service 2</a>
+                        <div class="service-title text-xl bold text-gray-900 mt-4 mb-7"><a href="service.html">Service 2</a>
                         </div>
                         <div class="service-description text-gray-600">
-                            <a href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
+                            <a href="service.html"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
                                 sit amet, consectetur
                                 adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
                                 ipsum dolor sit amet,
@@ -157,10 +223,10 @@
             <div class="h-auto mt-20">
                 <div class="flex justify-around items-center">
                     <div class="w-1/2">
-                        <div class="service-title text-xl bold text-gray-900 mt-4 mb-7"><a href="">Service 3</a>
+                        <div class="service-title text-xl bold text-gray-900 mt-4 mb-7"><a href="service.html">Service 3</a>
                         </div>
                         <div class="service-description text-gray-600">
-                            <a href="#"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
+                            <a href="service.html"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
                                 sit amet, consectetur
                                 adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
                                 ipsum dolor sit amet,
@@ -178,79 +244,179 @@
                         </div>
                     </div>
                     <div class="service-card w-1/2 px-4 p-5">
-                        <img src="asset/image/services/images (1).jpeg" alt="Service 1"
+                        <a href="service.html">
+
+                            <img src="asset/image/services/3.png" alt="Service 1"
                             class="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:rotate-1 hover:scale-105">
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- product -->
-        <div class="services mt-20 mb-20">
-            <div class="text-[50px] font-bold text-black mb-20 text-center">Our Service</div>
+        <div class="services mt-20 mb-20 mt-[13rem]">
+            <div class="text-[50px] font-bold text-black mb-20 text-center">Our product</div>
             <div class="h-auto mt-20">
                 <div class="max-w-6xl mx-auto">
                     <div class="swiper mySwiper ">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative">
-                                <p
+                        <div class="swiper-wrapper h-3/4 w-3/4  ">
+                            <div
+                                class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
+                                <a href="product.html">
+
+                                    <p
                                     class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
                                     New</p>
-                                <img src="asset/image/products/images.jpeg" class="mx-auto mb-3 !h-[90%] rounded-lg"
+                                    <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
                                     alt="Product">
+                                    <div class="h-1/8 flex justify-center">
+                                        <h3 class="text-xl font-bold">Product 1</h3>
+                                    </div>
+                                </a>
+                            </div>          <div
+                            class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
+                            <a href="product.html">
+
+                                <p
+                                class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
+                                New</p>
+                                <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
+                                alt="Product">
                                 <div class="h-1/8 flex justify-center">
                                     <h3 class="text-xl font-bold">Product 1</h3>
                                 </div>
+                            </a>
+                        </div>          <div
+                        class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
+                        <a href="product.html">
+
+                            <p
+                            class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
+                            New</p>
+                            <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
+                            alt="Product">
+                            <div class="h-1/8 flex justify-center">
+                                <h3 class="text-xl font-bold">Product 1</h3>
                             </div>
-                            <div class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative">
-                                <p
-                                    class="text-sm absolute top-2 right-1 bg-red-600 text-white px-3 py-1 rounded-md shadow-md">
-                                    over</p>
-                                <img src="asset/image/products/images.jpeg" class="mx-auto mb-3 !h-[90%] rounded-lg"
-                                    alt="Product">
-                                <div class="h-1/8 flex justify-center">
-                                    <h3 class="text-xl font-bold">Product 2</h3>
-                                </div>
-                            </div>
-                            <div class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative">
-                                <p
-                                    class="text-sm absolute top-2 right-1 bg-blue-600 text-white px-3 py-1 rounded-md shadow-md">
-                                    soon</p>
-                                <img src="asset/image/products/images.jpeg" class="mx-auto mb-3 !h-[90%] rounded-lg"
-                                    alt="Product">
-                                <div class="h-1/8 flex justify-center">
-                                    <h3 class="text-xl font-bold">Product 3</h3>
-                                </div>
-                            </div>
-                            <div class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative">
-                                <p
-                                    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
-                                    New</p>
-                                <img src="asset/image/products/images.jpeg" class="mx-auto mb-3 !h-[90%] rounded-lg"
-                                    alt="Product">
-                                <div class="h-1/8 flex justify-center">
-                                    <h3 class="text-xl font-bold">Product 5</h3>
-                                </div>
-                            </div>
-                            <div class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative">
-                                <p
-                                    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
-                                    New</p>
-                                <img src="asset/image/products/images.jpeg" class="mx-auto mb-3 !h-[90%] rounded-lg"
-                                    alt="Product">
-                                <div class="h-1/8 flex justify-center">
-                                    <h3 class="text-xl font-bold">Product 6</h3>
-                                </div>
-                            </div>
-                            <div class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative">
-                                <p
-                                    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
-                                    New</p>
-                                <img src="asset/image/products/images.jpeg" class="mx-auto mb-3 !h-[90%] rounded-lg"
-                                    alt="Product">
-                                <div class="h-1/8 flex justify-center">
-                                    <h3 class="text-xl font-bold">Product 7</h3>
-                                </div>
-                            </div>
+                        </a>
+                    </div>          <div
+                    class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
+                    <a href="product.html">
+
+                        <p
+                        class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
+                        New</p>
+                        <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
+                        alt="Product">
+                        <div class="h-1/8 flex justify-center">
+                            <h3 class="text-xl font-bold">Product 1</h3>
+                        </div>
+                    </a>
+                </div>          <div
+                class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
+                <a href="product.html">
+
+                    <p
+                    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
+                    New</p>
+                    <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
+                    alt="Product">
+                    <div class="h-1/8 flex justify-center">
+                        <h3 class="text-xl font-bold">Product 1</h3>
+                    </div>
+                </a>
+            </div>          <div
+            class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
+            <a href="product.html">
+
+                <p
+                class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
+                New</p>
+                <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
+                alt="Product">
+                <div class="h-1/8 flex justify-center">
+                    <h3 class="text-xl font-bold">Product 1</h3>
+                </div>
+            </a>
+        </div>          <div
+        class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
+        <a href="product.html">
+
+            <p
+            class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
+            New</p>
+            <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
+            alt="Product">
+            <div class="h-1/8 flex justify-center">
+                <h3 class="text-xl font-bold">Product 1</h3>
+            </div>
+        </a>
+    </div>          <div
+    class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
+    <a href="product.html">
+
+        <p
+        class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
+        New</p>
+        <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
+        alt="Product">
+        <div class="h-1/8 flex justify-center">
+            <h3 class="text-xl font-bold">Product 1</h3>
+        </div>
+    </a>
+</div>          <div
+class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
+<a href="product.html">
+
+    <p
+    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
+    New</p>
+    <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
+    alt="Product">
+    <div class="h-1/8 flex justify-center">
+        <h3 class="text-xl font-bold">Product 1</h3>
+    </div>
+</a>
+</div>          <div
+class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
+<a href="product.html">
+
+    <p
+    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
+    New</p>
+    <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
+    alt="Product">
+    <div class="h-1/8 flex justify-center">
+        <h3 class="text-xl font-bold">Product 1</h3>
+    </div>
+</a>
+</div>          <div
+class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
+<a href="product.html">
+
+    <p
+    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
+    New</p>
+    <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
+    alt="Product">
+    <div class="h-1/8 flex justify-center">
+        <h3 class="text-xl font-bold">Product 1</h3>
+    </div>
+</a>
+</div>          <div
+class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
+<a href="product.html">
+
+    <p
+    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
+    New</p>
+    <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
+    alt="Product">
+    <div class="h-1/8 flex justify-center">
+        <h3 class="text-xl font-bold">Product 1</h3>
+    </div>
+</a>
+</div>
                         </div>
                         <div class="swiper-pagination"></div>
                         <div class="swiper-button-next"></div>
@@ -288,7 +454,45 @@
             </div>
         </div>
     </div>
-<!-- footer -->
+    <section class="bg-gray-100 py-16 text-center relative mt-12">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-gray-800">Contact Diamond Cleaners USA</h2>
+            <p class="text-gray-600 mt-2">We’re here to answer your questions and help you schedule your cleaning
+                service!</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-10">
+                <div class="flex flex-col items-center">
+                    <img src="facebook-icon.png" alt="Facebook" class="w-12 h-12">
+                    <h3 class="text-lg font-semibold mt-3">Facebook</h3>
+                    <p class="text-gray-500 text-sm">Sea Clean Cleaning LLC</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="email-icon.png" alt="Email" class="w-12 h-12">
+                    <h3 class="text-lg font-semibold mt-3">E-mail</h3>
+                    <p class="text-gray-500 text-sm">seacleanoffice@gmail.com</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="phone-icon.png" alt="Phone" class="w-12 h-12">
+                    <h3 class="text-lg font-semibold mt-3">Phone number</h3>
+                    <p class="text-gray-500 text-sm">+1 (425) 529-5449</p>
+                </div>
+                <div class="flex flex-col items-center">
+                    <img src="map-icon.png" alt="Google Maps" class="w-12 h-12">
+                    <h3 class="text-lg font-semibold mt-3">Google Maps</h3>
+                    <p class="text-gray-500 text-sm">2410 S 128th St, Seattle, WA 98168</p>
+                </div>
+            </div>
+
+            <div
+                class="bg-indigo-100 p-6 rounded-lg flex flex-col md:flex-row justify-between items-center mt-10 max-w-2xl mx-auto">
+                <p class="text-gray-800 font-semibold">Any Questions? Call now! +1 (425) 529-5449</p>
+                <button class="mt-4 md:mt-0 bg-pink-500 hover:bg-pink-600 text-white py-2 px-4 rounded-lg">
+                    Call now
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
     <footer class="relative h-auto   bg-blue-900 text-white py-10">
         <div class="container mx-auto px-6 lg:px-20">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -353,41 +557,39 @@
                     <button class="bg-red-500 px-4 py-2 text-white rounded-r-lg">Subscribe</button>
                 </div>
             </div>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
         <div class="absolute bottom-0 w-full bg-gray-800 text-white text-center py-4">
             © 2025 Geti. All rights reserved.
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script >
-         const text = `Welcome to GETI`;
-    let index = 0;
-    const speed = 250; 
+    <script>
+        const text = `Welcome to GETI`;
+        let index = 0;
+        const speed = 250;
 
-    function typeEffect() {
-        if (index < text.length) {
-            document.getElementById("loadingText").innerHTML += text.charAt(index);
-            index++;
-            setTimeout(typeEffect, speed);
-        } else {
-            setTimeout(() => {
-                let preloader = document.getElementById("preloader");
-                preloader.style.opacity = "0";
+        function typeEffect() {
+            if (index < text.length) {
+                document.getElementById("loadingText").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeEffect, speed);
+            } else {
                 setTimeout(() => {
-                    preloader.style.display = "none";
-                }, 500);
-            }, 1000);
+                    let preloader = document.getElementById("preloader");
+                    preloader.style.opacity = "0";
+                    setTimeout(() => {
+                        preloader.style.display = "none";
+                    }, 500);
+                }, 1000);
+            }
         }
-    }
-
-    // تشغيل التأثير عند تحميل الصفحة
-    window.addEventListener("load", function () {
-        typeEffect();
-    }); 
+        window.addEventListener("load", function () {
+            typeEffect();
+        }); 
     </script>
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -395,7 +597,7 @@
             spaceBetween: 20,
             loop: true,
             autoplay: {
-                delay: 3000,
+                delay: 600000,
                 disableOnInteraction: false,
             },
             navigation: {
@@ -431,8 +633,8 @@
                 1024: { slidesPerView: 4 }
             }
         });
-         // تبديل القائمة المنسدلة
-         document.getElementById("langBtn").addEventListener("click", function () {
+        // تبديل القائمة المنسدلة
+        document.getElementById("langBtn").addEventListener("click", function () {
             document.getElementById("langMenu").classList.toggle("hidden");
         });
 
@@ -472,6 +674,19 @@
                     clickable: true,
                 },
             });
+        });
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "5", // اجعل العرض يتناسب مع عدد الشرائح المتاحة
+            spaceBetween: 20, // مسافة بين الشرائح
+            loop: true, // تمكين التكرار
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
         });
     </script>
 </body>
