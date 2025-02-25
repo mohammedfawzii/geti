@@ -13,7 +13,7 @@
 </head>
 
 <body class="bg-white-100">
-    <div id="preloader"
+    <!-- <div id="preloader"
         class="fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center justify-center z-50">
         <div class="animate-spin text-blue-600 mb-4">
             <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -24,14 +24,15 @@
             </svg>
         </div>
         <p id="loadingText" class="text-2xl font-bold text-blue-600"></p>
-    </div>
+    </div> -->
     <!-- Header -->
     <header class="bg-white shadow-md">
-        <div class="h-16 flex justify-between items-center px-10">
+        <div class="h-16 flex justify-between items-center px-6 md:px-10">
             <div class="logo text-2xl font-bold text-gray-700">
                 <a href="/"><img src="asset/image/logo/logo.png" alt=""></a>
             </div>
-            <nav class="navbar flex items-center space-x-6">
+            <!-- القائمة الرئيسية -->
+            <nav class="hidden lg:flex items-center space-x-6">
                 <ul class="flex space-x-6 text-gray-700 font-semibold">
                     <li><a href="/">Home</a></li>
                     <li><a href="products.html">Product</a></li>
@@ -41,7 +42,7 @@
                 </ul>
                 <div class="relative">
                     <button id="langBtn"
-                        class="flex items-center bg-gray-200 px-4 py-2 rounded-lg text-gray-700 font-semibold">
+                        class="flex items-center bg-gray-200 px-4 py-2 shadow-xl z-[1000000]  text-gray-700 font-semibold">
                         <img src="https://flagcdn.com/w40/us.png" class="w-6 h-4 mr-2" id="flagIcon">
                         <span id="selectedLang">EN</span>
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -62,80 +63,129 @@
             </nav>
         </div>
     </header>
+
+    <div
+        class="fixed  w-full bottom-0 left-0 right-0  bg-blue-100 rounded-xl shadow-lg p-4 flex justify-between items-center lg:hidden z-50">
+
+        <button class="flex flex-col items-center text-teal-500">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z" />
+            </svg>
+            <span class="w-3 h-1 mt-1 bg-teal-500 rounded-full"></span>
+        </button>
+
+        <!-- أيقونة المهام -->
+        <button class="flex flex-col items-center text-gray-400 hover:text-teal-500 transition duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M5 6h14M5 18h14" />
+            </svg>
+        </button>
+
+        <!-- أيقونة التقويم -->
+        <button class="flex flex-col items-center text-gray-400 hover:text-teal-500 transition duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M8 7V3m8 4V3m-9 4h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2z" />
+            </svg>
+        </button>
+
+        <!-- أيقونة الرسائل -->
+        <button class="flex flex-col items-center text-gray-400 hover:text-teal-500 transition duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M7 8h10M7 12h6M5 20l7-3 7 3V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v14z" />
+            </svg>
+        </button>
+
+        <!-- أيقونة القائمة -->
+        <button class="flex flex-col items-center text-gray-400 hover:text-teal-500 transition duration-300">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6h.01M12 12h.01M12 18h.01" />
+            </svg>
+        </button>
+    </div>
     <!-- Slider Section -->
     <div class="slider">
-        <div class="swiper mainSwiper w-full max-w-9xl h-[800px] mx-auto relative">
+        <div class="swiper mainSwiper w-full max-w-9xl h-[80vh] mx-auto relative rounded-none rounded-l-3xl rounded-t-none lg:rounded-none ">
             <div class="swiper-wrapper">
                 <!-- Slide 1 -->
                 <div class="swiper-slide relative">
                     <img src="asset/image/slider/1.jpg" alt="Image 1" class="w-full h-full object-cover">
                     <div
-                        class="absolute inset-0  flex flex-col items-center justify-center bg-black/50 text-white text-center p-12">
-                        <h2 class="text-4xl  font-bold mb-4">Lorem Ipsum Dolor</h2>
-                        <p class="text-lg max-w-4xl  mx-auto mb-6">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo consequatur, iste cupiditate
-                            sit, enim tempore quod aliquam veniam quam sequi quo sunt nemo, ullam consequuntur
-                            architecto? Accusamus aut unde rem.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Quisque vitae
-                            purus ut justo laoreet aliquet.</p>
-                        <div class="flex gap-4">
-                            <a href="#"
-                                class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-lg">Learn
-                                More</a>
-                            <a href="#"
-                                class="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-lg text-lg">Get
-                                Started</a>
+                        class="absolute inset-0  flex flex-col items-start justify-center bg-black/50  text-white text-start p-12">
+                        <div>
+
+                        </div>
+                        <h2 class="text-4xl  font-bold mb-4">GETI</h2>
+                        <div>
+                            <p class="text-lg max-w-4xl  mb-6">25
+                              years experience   <br> 
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo officiis qui nobis accusantium, fugit iusto ea voluptas quaerat laborum corrupti facere eligendi autem sit recusandae optio! Labore corporis laborum fuga!
+                            </p>
+                            <div class="flex gap-4">
+                                <a href="#about"
+                                    class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-lg">Learn
+                                    More</a>
+                                <a href="#"
+                                    class="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-lg text-lg">Get
+                                    Started</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide relative">
                     <img src="asset/image/slider/1.jpg" alt="Image 1" class="w-full h-full object-cover">
                     <div
-                        class="absolute inset-0  flex flex-col items-center justify-center bg-black/50 text-white text-center p-12">
-                        <h2 class="text-4xl  font-bold mb-4">Lorem Ipsum Dolor</h2>
-                        <p class="text-lg max-w-4xl  mx-auto mb-6">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo consequatur, iste cupiditate
-                            sit, enim tempore quod aliquam veniam quam sequi quo sunt nemo, ullam consequuntur
-                            architecto? Accusamus aut unde rem.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Quisque vitae
-                            purus ut justo laoreet aliquet.</p>
-                        <div class="flex gap-4">
-                            <a href="#"
-                                class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-lg">Learn
-                                More</a>
-                            <a href="#"
-                                class="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-lg text-lg">Get
-                                Started</a>
+                        class="absolute inset-0  flex flex-col items-start justify-center bg-black/50  text-white text-start p-12">
+                        <div>
+
+                        </div>
+                        <h2 class="text-4xl  font-bold mb-4">GETI</h2>
+                        <div>
+                            <p class="text-lg max-w-4xl  mb-6">25
+                              years experience   <br> 
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo officiis qui nobis accusantium, fugit iusto ea voluptas quaerat laborum corrupti facere eligendi autem sit recusandae optio! Labore corporis laborum fuga!
+                            </p>
+                            <div class="flex gap-4">
+                                <a href="#about"
+                                    class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-lg">Learn
+                                    More</a>
+                                <a href="#"
+                                    class="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-lg text-lg">Get
+                                    Started</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="swiper-slide relative">
                     <img src="asset/image/slider/1.jpg" alt="Image 1" class="w-full h-full object-cover">
                     <div
-                        class="absolute inset-0  flex flex-col items-center justify-center bg-black/50 text-white text-center p-12">
-                        <h2 class="text-4xl  font-bold mb-4">Lorem Ipsum Dolor</h2>
-                        <p class="text-lg max-w-4xl  mx-auto mb-6">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo consequatur, iste cupiditate
-                            sit, enim tempore quod aliquam veniam quam sequi quo sunt nemo, ullam consequuntur
-                            architecto? Accusamus aut unde rem.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Quisque vitae
-                            purus ut justo laoreet aliquet.</p>
-                        <div class="flex gap-4">
-                            <a href="#"
-                                class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-lg">Learn
-                                More</a>
-                            <a href="#"
-                                class="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-lg text-lg">Get
-                                Started</a>
+                        class="absolute inset-0  flex flex-col items-start justify-center bg-black/50  text-white text-start p-12">
+                        <div>
+
+                        </div>
+                        <h2 class="text-4xl  font-bold mb-4">GETI</h2>
+                        <div>
+                            <p class="text-lg max-w-4xl  mb-6">25
+                              years experience   <br> 
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo officiis qui nobis accusantium, fugit iusto ea voluptas quaerat laborum corrupti facere eligendi autem sit recusandae optio! Labore corporis laborum fuga!
+                            </p>
+                            <div class="flex gap-4">
+                                <a href="#about"
+                                    class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg text-lg">Learn
+                                    More</a>
+                                <a href="#"
+                                    class="px-6 py-3 bg-pink-600 hover:bg-pink-700 text-white rounded-lg text-lg">Get
+                                    Started</a>
+                            </div>
                         </div>
                     </div>
                 </div>
+       
             </div>
 
-            <!-- Navigation buttons -->
-            <div class="swiper-button-next swiper-button-next-main"></div>
-            <div class="swiper-button-prev swiper-button-prev-main"></div>
-            <div class="swiper-pagination swiper-pagination-main"></div>
+        
         </div>
     </div>
 
@@ -144,9 +194,9 @@
     <div class="container max-w-7xl mx-auto mt-[13rem]">
 
         <!-- about us -->
-        <section class="about-us flex flex-col items-center justify-center py-12 mt-10 mb-20 ">
+        <section id="about" class="about-us flex flex-col items-center justify-center py-12 mt-10 mb-20">
             <div class="text-[50px] font-bold text-black mb-10">About Us</div>
-            <div class="text-lg text-gray-600  max-w-5xl text-center">
+            <div class="text-lg text-gray-600  max-w-5xl text-center w-3/4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non ligula ac neque malesuada molestie.
                 Nullam sodales, nunc eu consectetur ultricies, justo velit semper velit, in condimentum neque velit in
                 lectus. Sed tempor, mauris vitae posuere lobortis, velit velit commodo velit, ac laoreet neque enim in
@@ -154,14 +204,16 @@
             </div>
         </section>
         <!-- services -->
-        <div class="services mt-10 mt-[10rem]">
+        <div class="services mt-10 mt-[10rem] w-3/4 mx-auto">
             <div class="text-[50px] font-bold text-black mb-20 text-center">Our Service</div>
-            <div class="h-auto mt-20">
-                <div class="flex justify-around items-center">
-                    <div class="w-1/2">
-                        <div class="service-title text-xl bold text-gray-900 mt-4 mb-7"><a href="service.html">Service 1</a></div>
+            <div class="h-auto mt-20 ">
+                <div class="flex justify-around items-center flex-wrap">
+                    <div class="w-3/4 lg:w-1/2">
+                        <div class="service-title text-xl bold text-gray-900 mt-4 mb-7"><a href="service.html">Service
+                                1</a></div>
                         <div class="service-description text-gray-600">
-                            <a href="service.html"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit
+                            <a href="service.html"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                dolor sit
                                 amet, consectetur
                                 adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
                                 dolor sit amet,
@@ -178,29 +230,31 @@
                                 consectetur adipiscing elit.</a>
                         </div>
                     </div>
-                    <div class="service-card w-1/2 px-4 p-5">
+                    <div class="service-card w-3/4 lg:w-1/2 px-4 p-5">
                         <a href="service.html">
 
                             <img src="asset/image/services/1.png" alt="Service 1"
-                            class="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:rotate-1 hover:scale-105">
+                                class="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:rotate-1 hover:scale-105">
                         </a>
                     </div>
                 </div>
             </div>
             <div class="h-auto mt-20">
-                <div class="flex justify-around items-center">
-                    <div class="service-card w-1/2 px-4 p-5">
+                <div class="flex justify-around items-center flex-wrap">
+                    <div class="service-card w-3/4 lg:w-1/2 px-4 p-5 lg:block hidden">
                         <a href="service.html">
-                            
+
                             <img src="asset/image/services/2.png" alt="Service 1"
-                            class="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:rotate-1 hover:scale-105">
+                                class="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:rotate-1 hover:scale-105">
                         </a>
                     </div>
-                    <div class="w-1/2">
-                        <div class="service-title text-xl bold text-gray-900 mt-4 mb-7"><a href="service.html">Service 2</a>
+                    <div class="w-3/4 lg:w-1/2">
+                        <div class="service-title text-xl bold text-gray-900 mt-4 mb-7"><a href="service.html">Service
+                                2</a>
                         </div>
                         <div class="service-description text-gray-600">
-                            <a href="service.html"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
+                            <a href="service.html"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                dolor
                                 sit amet, consectetur
                                 adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
                                 ipsum dolor sit amet,
@@ -217,216 +271,146 @@
                                 consectetur adipiscing elit.</a>
                         </div>
                     </div>
+                    <div class="service-card w-3/4 lg:w-1/2 px-4 p-5 lg:hidden block">
+                        <a href="service.html">
 
+                            <img src="asset/image/services/2.png" alt="Service 1"
+                                class="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:rotate-1 hover:scale-105">
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="h-auto mt-20">
-                <div class="flex justify-around items-center">
-                    <div class="w-1/2">
-                        <div class="service-title text-xl bold text-gray-900 mt-4 mb-7"><a href="service.html">Service 3</a>
-                        </div>
+                <div class="flex justify-around items-center flex-wrap">
+                    <div class="w-3/4 lg:w-1/2">
+                        <div class="service-title text-xl bold text-gray-900 mt-4 mb-7"><a href="service.html">Service
+                                3</a></div>
                         <div class="service-description text-gray-600">
-                            <a href="service.html"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor
-                                sit amet, consectetur
-                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                                ipsum dolor sit amet,
+                            <a href="service.html"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                dolor sit
+                                amet, consectetur
+                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                dolor sit amet,
                                 consectetur adipiscing elit.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
                                 consectetur
-                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                                ipsum dolor sit amet,
+                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                dolor sit amet,
                                 consectetur adipiscing elit.
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet,
                                 consectetur
-                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem
-                                ipsum dolor sit amet,
+                                adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum
+                                dolor sit amet,
                                 consectetur adipiscing elit.</a>
                         </div>
                     </div>
-                    <div class="service-card w-1/2 px-4 p-5">
+                    <div class="service-card w-3/4 lg:w-1/2 px-4 p-5">
                         <a href="service.html">
 
-                            <img src="asset/image/services/3.png" alt="Service 1"
-                            class="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:rotate-1 hover:scale-105">
+                            <img src="asset/image/services/1.png" alt="Service 1"
+                                class="w-full h-64 object-cover rounded-lg transition-transform duration-300 hover:rotate-1 hover:scale-105">
                         </a>
                     </div>
                 </div>
             </div>
         </div>
         <!-- product -->
-        <div class="services mt-20 mb-20 mt-[13rem]">
+
+        <div class="services mt-20 w-3/4 mx-auto mb-20 mt-[13rem]">
             <div class="text-[50px] font-bold text-black mb-20 text-center">Our product</div>
             <div class="h-auto mt-20">
                 <div class="max-w-6xl mx-auto">
-                    <div class="swiper mySwiper ">
-                        <div class="swiper-wrapper h-3/4 w-3/4  ">
-                            <div
-                                class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
-                                <a href="product.html">
-
-                                    <p
-                                    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
-                                    New</p>
-                                    <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
-                                    alt="Product">
-                                    <div class="h-1/8 flex justify-center">
-                                        <h3 class="text-xl font-bold">Product 1</h3>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide bg-white p-4 rounded-2xl shadow-lg text-center relative h-[300px] border border-gray-200">
+                                <a href="product.html" class="block">
+                                    <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-medium px-3 py-1 rounded-full shadow-md">New</span>
+                                    <div
+                                        class="w-full h-[200px] flex items-center justify-center overflow-hidden rounded-lg bg-gray-100">
+                                        <img src="asset/image/products/1.png" class="object-contain h-full max-w-full"
+                                            alt="Product">
+                                    </div>
+                                    <div class="mt-3">
+                                        <h3 class="text-lg font-semibold text-gray-800 truncate">Product 1</h3>
                                     </div>
                                 </a>
-                            </div>          <div
-                            class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
-                            <a href="product.html">
-
-                                <p
-                                class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
-                                New</p>
-                                <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
-                                alt="Product">
-                                <div class="h-1/8 flex justify-center">
-                                    <h3 class="text-xl font-bold">Product 1</h3>
-                                </div>
-                            </a>
-                        </div>          <div
-                        class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
-                        <a href="product.html">
-
-                            <p
-                            class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
-                            New</p>
-                            <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
-                            alt="Product">
-                            <div class="h-1/8 flex justify-center">
-                                <h3 class="text-xl font-bold">Product 1</h3>
                             </div>
-                        </a>
-                    </div>          <div
-                    class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
-                    <a href="product.html">
+                            <div class="swiper-slide bg-white p-4 rounded-2xl shadow-lg text-center relative h-[300px] border border-gray-200">
+                                <a href="product.html" class="block">
+                                    <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-medium px-3 py-1 rounded-full shadow-md">New</span>
+                                    <div
+                                        class="w-full h-[200px] flex items-center justify-center overflow-hidden rounded-lg bg-gray-100">
+                                        <img src="asset/image/products/1.png" class="object-contain h-full max-w-full"
+                                            alt="Product">
+                                    </div>
+                                    <div class="mt-3">
+                                        <h3 class="text-lg font-semibold text-gray-800 truncate">Product 1</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide bg-white p-4 rounded-2xl shadow-lg text-center relative h-[300px] border border-gray-200">
+                                <a href="product.html" class="block">
+                                    <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-medium px-3 py-1 rounded-full shadow-md">New</span>
+                                    <div
+                                        class="w-full h-[200px] flex items-center justify-center overflow-hidden rounded-lg bg-gray-100">
+                                        <img src="asset/image/products/1.png" class="object-contain h-full max-w-full"
+                                            alt="Product">
+                                    </div>
+                                    <div class="mt-3">
+                                        <h3 class="text-lg font-semibold text-gray-800 truncate">Product 1</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide bg-white p-4 rounded-2xl shadow-lg text-center relative h-[300px] border border-gray-200">
+                                <a href="product.html" class="block">
+                                    <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-medium px-3 py-1 rounded-full shadow-md">New</span>
+                                    <div
+                                        class="w-full h-[200px] flex items-center justify-center overflow-hidden rounded-lg bg-gray-100">
+                                        <img src="asset/image/products/1.png" class="object-contain h-full max-w-full"
+                                            alt="Product">
+                                    </div>
+                                    <div class="mt-3">
+                                        <h3 class="text-lg font-semibold text-gray-800 truncate">Product 1</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide bg-white p-4 rounded-2xl shadow-lg text-center relative h-[300px] border border-gray-200">
+                                <a href="product.html" class="block">
+                                    <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-medium px-3 py-1 rounded-full shadow-md">New</span>
+                                    <div
+                                        class="w-full h-[200px] flex items-center justify-center overflow-hidden rounded-lg bg-gray-100">
+                                        <img src="asset/image/products/1.png" class="object-contain h-full max-w-full"
+                                            alt="Product">
+                                    </div>
+                                    <div class="mt-3">
+                                        <h3 class="text-lg font-semibold text-gray-800 truncate">Product 1</h3>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide bg-white p-4 rounded-2xl shadow-lg text-center relative h-[300px] border border-gray-200">
+                                <a href="product.html" class="block">
+                                    <span class="absolute top-3 right-3 bg-green-600 text-white text-xs font-medium px-3 py-1 rounded-full shadow-md">New</span>
+                                    <div
+                                        class="w-full h-[200px] flex items-center justify-center overflow-hidden rounded-lg bg-gray-100">
+                                        <img src="asset/image/products/1.png" class="object-contain h-full max-w-full"
+                                            alt="Product">
+                                    </div>
+                                    <div class="mt-3">
+                                        <h3 class="text-lg font-semibold text-gray-800 truncate">Product 1</h3>
+                                    </div>
+                                </a>
+                            </div>
 
-                        <p
-                        class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
-                        New</p>
-                        <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
-                        alt="Product">
-                        <div class="h-1/8 flex justify-center">
-                            <h3 class="text-xl font-bold">Product 1</h3>
                         </div>
-                    </a>
-                </div>          <div
-                class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
-                <a href="product.html">
-
-                    <p
-                    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
-                    New</p>
-                    <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
-                    alt="Product">
-                    <div class="h-1/8 flex justify-center">
-                        <h3 class="text-xl font-bold">Product 1</h3>
                     </div>
-                </a>
-            </div>          <div
-            class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
-            <a href="product.html">
-
-                <p
-                class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
-                New</p>
-                <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
-                alt="Product">
-                <div class="h-1/8 flex justify-center">
-                    <h3 class="text-xl font-bold">Product 1</h3>
+                 
                 </div>
-            </a>
-        </div>          <div
-        class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
-        <a href="product.html">
-
-            <p
-            class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
-            New</p>
-            <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
-            alt="Product">
-            <div class="h-1/8 flex justify-center">
-                <h3 class="text-xl font-bold">Product 1</h3>
             </div>
-        </a>
-    </div>          <div
-    class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
-    <a href="product.html">
-
-        <p
-        class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
-        New</p>
-        <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
-        alt="Product">
-        <div class="h-1/8 flex justify-center">
-            <h3 class="text-xl font-bold">Product 1</h3>
         </div>
-    </a>
-</div>          <div
-class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
-<a href="product.html">
 
-    <p
-    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
-    New</p>
-    <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
-    alt="Product">
-    <div class="h-1/8 flex justify-center">
-        <h3 class="text-xl font-bold">Product 1</h3>
+
+
     </div>
-</a>
-</div>          <div
-class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
-<a href="product.html">
-
-    <p
-    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
-    New</p>
-    <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
-    alt="Product">
-    <div class="h-1/8 flex justify-center">
-        <h3 class="text-xl font-bold">Product 1</h3>
-    </div>
-</a>
-</div>          <div
-class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
-<a href="product.html">
-
-    <p
-    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
-    New</p>
-    <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
-    alt="Product">
-    <div class="h-1/8 flex justify-center">
-        <h3 class="text-xl font-bold">Product 1</h3>
-    </div>
-</a>
-</div>          <div
-class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[250px]">
-<a href="product.html">
-
-    <p
-    class="text-sm absolute top-2 right-1 bg-green-600 text-white px-3 py-1 rounded-md shadow-md">
-    New</p>
-    <img src="asset/image/products/1.png" class="mx-auto mb-3 !h-[90%] rounded-lg"
-    alt="Product">
-    <div class="h-1/8 flex justify-center">
-        <h3 class="text-xl font-bold">Product 1</h3>
-    </div>
-</a>
-</div>
-                        </div>
-                        <div class="swiper-pagination"></div>
-                        <div class="swiper-button-next"></div>
-                        <div class="mt-10 swiper-button-prev"></div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
     </div>
     <!-- clinets -->
     <div class="clients bg-white-100 p-10 mt-20">
@@ -449,8 +433,7 @@ class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[
 
 
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+               
             </div>
         </div>
     </div>
@@ -590,8 +573,7 @@ class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[
         window.addEventListener("load", function () {
             typeEffect();
         }); 
-    </script>
-    <script>
+
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: 3,
             spaceBetween: 20,
@@ -614,7 +596,6 @@ class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[
                 1024: { slidesPerView: 3 }
             }
         });
-        // سلايدر العملاء
         var swiperClients = new Swiper(".mySwiperClients", {
             slidesPerView: 4,
             spaceBetween: 20,
@@ -628,17 +609,21 @@ class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[
                 disableOnInteraction: false,
             },
             breakpoints: {
-                640: { slidesPerView: 2 },
-                768: { slidesPerView: 3 },
-                1024: { slidesPerView: 4 }
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 15
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                }
             }
         });
-        // تبديل القائمة المنسدلة
-        document.getElementById("langBtn").addEventListener("click", function () {
-            document.getElementById("langMenu").classList.toggle("hidden");
-        });
 
-        // تغيير اللغة عند الاختيار
         document.querySelectorAll("#langMenu li").forEach(item => {
             item.addEventListener("click", function () {
                 let selectedLang = this.getAttribute("data-lang");
@@ -647,17 +632,11 @@ class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[
                 document.getElementById("selectedLang").textContent = selectedLang;
                 document.getElementById("flagIcon").src = selectedFlag;
 
-                document.getElementById("langMenu").classList.add("hidden"); // إغلاق القائمة
+                document.getElementById("langMenu").classList.add("hidden");
             });
         });
 
-        // إغلاق القائمة عند النقر خارجها
-        document.addEventListener("click", function (event) {
-            if (!document.getElementById("langBtn").contains(event.target) &&
-                !document.getElementById("langMenu").contains(event.target)) {
-                document.getElementById("langMenu").classList.add("hidden");
-            }
-        });
+
         document.addEventListener("DOMContentLoaded", function () {
             var mainSwiper = new Swiper(".mainSwiper", {
                 loop: true,
@@ -665,28 +644,42 @@ class="swiper-slide bg-white p-5 rounded-lg shadow-lg text-center relative  !w-[
                     delay: 3000,
                     disableOnInteraction: false,
                 },
-                navigation: {
-                    nextEl: ".swiper-button-next-main",
-                    prevEl: ".swiper-button-prev-main",
-                },
                 pagination: {
                     el: ".swiper-pagination-main",
                     clickable: true,
                 },
             });
         });
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: "5", // اجعل العرض يتناسب مع عدد الشرائح المتاحة
-            spaceBetween: 20, // مسافة بين الشرائح
-            loop: true, // تمكين التكرار
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 5,
+                spaceBetween: 20,
+                loop: document.querySelectorAll('.swiper-slide').length > 5,
+                loopFillGroupWithBlank: true,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 10
+                    },
+                    768: {
+                        slidesPerView: 3,
+                        spaceBetween: 15
+                    },
+                    1024: {
+                        slidesPerView: 3, 
+                        spaceBetween: 20
+                    }
+                }
+            });
         });
     </script>
 </body>
