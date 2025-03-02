@@ -13,36 +13,23 @@
 </head>
 
 <body class="bg-white-100">
-    <div id="preloader"
-        class="fixed top-0 left-0 w-full h-full bg-white flex flex-col items-center justify-center z-50">
-        <div class="animate-spin text-blue-600 mb-4">
-            <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M12 6V4m0 16v-2m-4.243-1.757l-1.414 1.414M16.243 16.243l1.414 1.414M6 12H4m16 0h-2m-1.757-4.243l1.414-1.414M7.757 7.757L6.343 6.343">
-                </path>
-            </svg>
-        </div>
-        <p id="loadingText" class="text-2xl font-bold text-blue-600"></p>
-    </div>
-    <!-- Header -->
-    <header class="bg-white shadow-md">
-        <div class="h-16 flex justify-between items-center px-10">
+    <header class="bg-white w-[80%] mx-auto">
+        <div class="h-16 flex justify-between items-center px-6 md:px-10">
             <div class="logo text-2xl font-bold text-gray-700">
-                
-                <a href="#"><img src="asset/image/logo/logo.png" alt=""></a>
+                <a href="/"><img src="asset/image/logo/logo.png" alt=""></a>
             </div>
-            <nav class="navbar flex items-center space-x-6">
+            <nav class="hidden lg:flex items-center space-x-6">
                 <ul class="flex space-x-6 text-gray-700 font-semibold">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Product</a></li>
-                    <li><a href="#">Client</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="products.html">Product</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="blogs.html">Blog</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
                 <div class="relative">
                     <button id="langBtn"
-                        class="flex items-center bg-gray-200 px-4 py-2 rounded-lg text-gray-700 font-semibold">
+                        class="flex items-center bg-white px-4s z-[1000000]  text-gray-700 font-semibold">
                         <img src="https://flagcdn.com/w40/us.png" class="w-6 h-4 mr-2" id="flagIcon">
                         <span id="selectedLang">EN</span>
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -63,39 +50,10 @@
             </nav>
         </div>
     </header>
-
-    <!-- Hero -->
-    <section class="relative bg-cover bg-center h-[70vh] flex items-center justify-center text-center text-white"
-        style="background-image: url('asset/image/geti/2a.jpg');">
-        <div class="absolute bottom-0 left-0 w-full h-16 bg-white"
-            style="clip-path: polygon(100% 0%, 0% 100%, 100% 100%);"></div>
-        <div class="bg-opacity-60 p-12 rounded-lg relative z-10 flex  flex-col items-center font-[Cairo]">
-            <h1 class="text-5xl font-bold">service</h1>
-            <p class="block mt-4 mb-4 ms-0 me-0 w-1/4">At Diamond Cleaners USA, we specialize in providing top-tier
-                school professional cleaning services to educational institutions across the USA. We understand the
-                critical need for a clean and healthy learning environment to promote student success and well-being.
-                Our expert cleaning team tailors services to the unique requirements of schools, ensuring classrooms,
-                hallways, cafeterias, and restrooms are thoroughly sanitized and spotless. With a focus on health and
-                safety, our school cleaning services help maintain a welcoming atmosphere for students, teachers, and
-                staff, keeping your institution running smoothly year-round.</p>
-                <div class="flex space-x-4">
-                    <!-- زر "Get a Free Quote" -->
-                    <a href="#" class="bg-pink-500 hover:bg-red-800 text-white font-semibold py-3 px-6 rounded-md shadow-md transition-all">
-                        Get a Free Quote
-                    </a>
-            
-                    <!-- زر "Call Now" -->
-                    <a href="#" class="bg-blue-700 hover:bg-blue-800 text-white font-semibold py-3 px-6 rounded-md shadow-md transition-all">
-                        Call Now
-                    </a>
-                </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 200" preserveAspectRatio="none"
-            class="absolute bottom-0 left-0 w-full fill-current text-white">
-            <path d="M0,150 C400,200 800,50 1200,120 C1600,190 1920,80 1920,80 V200 H0 V150 Z"></path>
-        </svg>
-    </section>
-
+    <div class="bg-blue-100 py-10 px-6 text-center relative">
+        <h1 class="text-4xl font-bold text-gray-800">Services</h1>
+        <p class="text-gray-600">Home > Service</p>
+    </div>
     <!-- descriptin -->
     <section class="max-w-6xl h-[800px] mx-auto px-6 py-16 mt-[130px]">
         <div class="flex flex-col md:flex-row items-center gap-12">

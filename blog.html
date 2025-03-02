@@ -8,22 +8,23 @@
 </head>
 <body class="bg-white-100 text-gray-900">
      <!-- Header -->
-     <header class="bg-white shadow-md">
-        <div class="h-16 flex justify-between items-center px-10">
+     <header class="bg-white w-[80%] mx-auto">
+        <div class="h-16 flex justify-between items-center px-6 md:px-10">
             <div class="logo text-2xl font-bold text-gray-700">
                 <a href="/"><img src="asset/image/logo/logo.png" alt=""></a>
             </div>
-            <nav class="navbar flex items-center space-x-6">
+            <nav class="hidden lg:flex items-center space-x-6">
                 <ul class="flex space-x-6 text-gray-700 font-semibold">
                     <li><a href="/">Home</a></li>
                     <li><a href="products.html">Product</a></li>
+                    <li><a href="#service">Service</a></li>
                     <li><a href="blogs.html">Blog</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
                 <div class="relative">
                     <button id="langBtn"
-                        class="flex items-center bg-gray-200 px-4 py-2 rounded-lg text-gray-700 font-semibold">
+                        class="flex items-center bg-white px-4s z-[1000000]  text-gray-700 font-semibold">
                         <img src="https://flagcdn.com/w40/us.png" class="w-6 h-4 mr-2" id="flagIcon">
                         <span id="selectedLang">EN</span>
                         <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -44,60 +45,132 @@
             </nav>
         </div>
     </header>
-    
-    <!-- Main Content -->
-    <main class="max-w-4xl mx-auto my-10 bg-white p-8 rounded-lg shadow-lg">
-        <p class="text-green-600 font-semibold">Popular Articles | October 23, 2023</p>
-        <h2 class="text-4xl font-bold mt-2">Best Strategy to Achieve Profitable Harvest</h2>
-        <p class="mt-4 text-gray-600">Optimal strategies for achieving profitable harvests involve a comprehensive approach to farm management...</p>
-        <img src="asset/image/geti/1.jpg" alt="Harvest" class="mt-6 rounded-lg">
+
+    <div class="bg-blue-100 py-10 px-6 text-center relative">
+        <h1 class="text-4xl font-bold text-gray-800">Blogs</h1>
+        <p class="text-gray-600">Home > blog</p>
+    </div>
+  
+
+     <!-- الحاوية الرئيسية -->
+     <div class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
         
-        <h3 class="text-2xl font-semibold mt-6">Achieve a Profitable Harvest</h3>
-        <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga velit perferendis accusamus cum possimus deleniti dignissimos quam unde aut iure, maxime commodi vitae veniam nulla, labore, quo ducimus temporibus fugit! Achieving a profitable harvest involves a series of strategic steps...</p>
-        
-        <h4 class="text-xl font-semibold mt-4">1. Selection of the Right Varieties and Seeds</h4>
-        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga velit perferendis accusamus cum possimus deleniti dignissimos quam unde aut iure, maxime commodi vitae veniam nulla, labore, quo ducimus temporibus fugit! Selecting the right varieties and seeds is a key step...</p>
-        
-        <h4 class="text-xl font-semibold mt-4">2. Efficient Crop Management</h4>
-        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga velit perferendis accusamus cum possimus deleniti dignissimos quam unde aut iure, maxime commodi vitae veniam nulla, labore, quo ducimus temporibus fugit! Efficient plant management involves regular maintenance...</p>
-        
-        <h4 class="text-xl font-semibold mt-4">3. Use of Agricultural Technology</h4>
-        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga velit perferendis accusamus cum possimus deleniti dignissimos quam unde aut iure, maxime commodi vitae veniam nulla, labore, quo ducimus temporibus fugit! Utilization of agricultural technology includes...</p>
-        
-        <h4 class="text-xl font-semibold mt-4">4. Choosing the Right Harvest Time</h4>
-        <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga velit perferendis accusamus cum possimus deleniti dignissimos quam unde aut iure, maxime commodi vitae veniam nulla, labore, quo ducimus temporibus fugit! Choosing the right harvest time involves careful monitoring...</p>
-    </main>
-    
-    <!-- Related Articles -->
-    <section class="max-w-4xl mx-auto my-10">
-        <h3 class="text-2xl font-semibold">Related Articles</h3>
-        <div class="grid grid-cols-3 gap-6 mt-4">
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <img src="asset/image/geti/2.png" class="rounded-md">
-                <h4 class="mt-2 font-semibold">Achieving High Productivity from Your Own Home Garden</h4>
+        <!-- المحتوى الرئيسي -->
+        <div class="md:col-span-2 bg-white p-6 rounded-lg shadow-md">
+            <h1 class="text-3xl font-bold text-gray-800">Parental Involvement: Building Strong Home</h1>
+            <div class="flex items-center text-gray-500 text-sm mt-2">
+                <span>📅 04 Jun, 2024</span>
+                <span class="mx-2">|</span>
+                <span>✍️ John Doe</span>
+                <span class="mx-2">|</span>
+                <span>⏳ 2 Min Read</span>
+                <span class="mx-2">|</span>
+                <span>💬 0 Comments</span>
             </div>
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <img src="asset/image/geti/2.png" class="rounded-md">
-                <h4 class="mt-2 font-semibold">The Best Guide to Planting Seeds with Optimal Results</h4>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <img src="asset/image/geti/2.png" class="rounded-md">
-                <h4 class="mt-2 font-semibold">Strategies for Caring for Your Garden Efficiently</h4>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <img src="asset/image/geti/2.png" class="rounded-md">
-                <h4 class="mt-2 font-semibold">Achieving High Productivity from Your Own Home Garden</h4>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <img src="asset/image/geti/2.png" class="rounded-md">
-                <h4 class="mt-2 font-semibold">The Best Guide to Planting Seeds with Optimal Results</h4>
-            </div>
-            <div class="bg-white p-4 rounded-lg shadow-lg">
-                <img src="asset/image/geti/2.png" class="rounded-md">
-                <h4 class="mt-2 font-semibold">Strategies for Caring for Your Garden Efficiently</h4>
+            <img src="asset/image/geti/2.png" alt="Graduation" class="w-full h-64 object-cover mt-4 rounded-lg">
+            
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+            <p class="mt-6 text-gray-700 leading-relaxed">
+                In today’s fast-paced, technology-driven world, engaging students in the classroom can be more challenging than ever...
+            </p>
+        </div>
+
+        <!-- الشريط الجانبي -->
+        <div class="md:col-span-1">
+            <div class="sticky top-4">
+                <div class="bg-white p-4 rounded-lg shadow-md mb-6">
+                    <h2 class="text-lg font-semibold mb-3"> Category</h2>
+                    <ul class="text-blue-500 space-y-2">
+                        <li><a href="#"> Education</a></li>
+                        <li><a href="#"> Psychology</a></li>
+                        <li><a href="#"> Strategies</a></li>
+                        <li><a href="#"> Health</a></li>
+                    </ul>
+                </div>
+
+                <!-- آخر المقالات -->
+                <div class="bg-white p-4 rounded-lg shadow-md">
+                    <h2 class="text-lg font-semibold mb-3">new</h2>
+                    <ul class="space-y-3">
+                        <li class="flex items-center space-x-2 ">
+                            <img src="asset/image/products/3.png" class="w-24 h-24 rounded-md" alt="post">
+                            <a href="#" class="text-gray-700 hover:text-blue-500">Top Classroom Resourceatest Research in Educationatest Research in Educationatest Research in Educations</a>
+                        </li>
+                        <li class="flex items-center space-x-2">
+                            <img src="asset/image/products/3.png" class="w-24 h-24 rounded-md" alt="post">
+                            <a href="#" class="text-gray-700 hover:text-blue-500">Latest Research in Educationatest Research in Educationatest Research in Education</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </section>
+        </div>
+
     <section class="bg-gray-100 py-16 text-center relative mt-12">
         <div class="max-w-4xl mx-auto px-6">
             <h2 class="text-3xl font-bold text-gray-800">Contact Diamond Cleaners USA</h2>
